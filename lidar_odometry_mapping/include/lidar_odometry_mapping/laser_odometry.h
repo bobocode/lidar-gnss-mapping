@@ -54,7 +54,7 @@
 
 #include <cmath>
 #include <eigen3/Eigen/Dense>
-#include <lidar_odometry_mapping/lidarFactor.hpp>
+#include <lidar_odometry_mapping/lidarFactor.h>
 #include <mutex>
 #include <queue>
 

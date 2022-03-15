@@ -58,7 +58,6 @@ public:
   // void laserOdometryIO(const tf2::Transform& cam0_curr_T_cam0_last);
   void laserMappingIO();
 
-private:
   std::shared_ptr<GloamTF> gloam_tf;
 
   ros::NodeHandle nh;

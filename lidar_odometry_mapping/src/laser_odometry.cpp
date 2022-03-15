@@ -89,21 +89,8 @@ void LaserOdometry::init(std::shared_ptr<GloamTF>& gloam_tf_)
   para_t[1] = 0.0;
   para_t[2] = 0.0;
 
-  // // q_last_curr = Eigen::Map<Eigen::Quaterniond>(para_q);
-  // // t_last_curr = Eigen::Map<Eigen::Vector3d>(para_t);
   new (&q_last_curr) Eigen::Map<Eigen::Quaterniond>(para_q);
   new (&t_last_curr) Eigen::Map<Eigen::Vector3d>(para_t);
-
-  // ROS_INFO("INIT raw: q_last_curr: w = %f x = %f, y = %f, z = %f", para_q[3], para_q[0], para_q[1], para_q[2]);
-  // ROS_INFO("INIT: q_last_curr: w = %f x = %f, y = %f, z = %f", q_last_curr.w(), q_last_curr.x(), q_last_curr.y(),
-  // q_last_curr.z()); ROS_INFO("INIT: t_last_curr: x = %f, y = %f, z = %f", t_last_curr.x(), t_last_curr.y(),
-  // t_last_curr.z());
-
-  // Eigen::Map<Eigen::Quaterniond> q_last_curr2(para_q);
-  // Eigen::Map<Eigen::Vector3d> t_last_curr2(para_t);
-  // ROS_INFO("INIT2: q_last_curr: w = %f x = %f, y = %f, z = %f", q_last_curr2.w(), q_last_curr2.x(), q_last_curr2.y(),
-  // q_last_curr2.z()); ROS_INFO("INIT2: t_last_curr: x = %f, y = %f, z = %f", t_last_curr2.x(), t_last_curr2.y(),
-  // t_last_curr2.z());
 
   pubLaserCloudCornerLast = nh.advertise<sensor_msgs::PointCloud2>("/laser_cloud_corner_last", 100);
   pubLaserCloudSurfLast = nh.advertise<sensor_msgs::PointCloud2>("/laser_cloud_surf_last", 100);

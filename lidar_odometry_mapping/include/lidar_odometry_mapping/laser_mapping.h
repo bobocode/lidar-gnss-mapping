@@ -64,7 +64,7 @@
 #include <gloam_tf/gloam_tf.h>
 
 #include "lidar_odometry_mapping/common.h"
-#include "lidar_odometry_mapping/lidarFactor.hpp"
+#include "lidar_odometry_mapping/lidarFactor.h"
 #include "lidar_odometry_mapping/tic_toc.h"
 
 namespace gloam

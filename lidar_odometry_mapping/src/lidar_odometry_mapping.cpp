@@ -70,7 +70,7 @@ void LidarOdometryMapping::reset()
   laser_mapping.reset();
 }
 
-void LidarOdometryMapping::scanRegistrationIO(const pcl::PointCloud<pcl::PointXYZ>& laserCloudIn)
+void LidarOdometryMapping::scanRegistrationIO(const pcl::PointCloud<pcl::PointXYZI>& laserCloudIn)
 {
   loam_timer.tic();
   frame_time = 0.0;
@@ -152,12 +152,5 @@ void LidarOdometryMapping::laserMappingIO()
     ROS_WARN("LOAM takes %f ms (>100 ms)", frame_time);
   }
 }
-
-// void LidarOdometryMapping::solveLOAM() {
-//     laser_odometry.solveLO();
-//     laser_mapping.solveMapping();
-
-//     // TODO: check the running time constraint: 0.1s
-// }
 
 }  // namespace gloam
