@@ -1,5 +1,9 @@
 # lidar-gnss-mapping
-This repository works on tightly fusing raw GNSS measuremtns, IMU with LiDAR information for localizationa and mapping. The LOAM/Lidar Odometry part is adapted and refactored from [ALOAM](https://github.com/tops666/Aloam). ***More code is coming...***
+This repository works on tightly fusing raw GNSS measuremtns, IMU with LiDAR information for localizationa and mapping.
+***More code is coming...***
+***to do list***
 - [x] online alignment
-- [x] tightly-couple fusion via FGO framework for localization
-- [x] Mapping
+- [x] 
+# Acknowledge
+The code is adapted from [Lio](https://github.com/hyye/lio-mapping) and [GVINS](https://github.com/HKUST-Aerial-Robotics/GVINS)
+
