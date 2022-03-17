@@ -10,7 +10,7 @@ Currently, gnss is aligned by using IMU， which means gnss cannot be utilized i
 
 
 ***More code is coming...***  
-## to do list
+
 - [ ] online alignment between LiDAR and GNSS
 - [ ] reduce performance time when processing 3d point cloud
 # Acknowledge
